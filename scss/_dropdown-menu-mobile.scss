@@ -1,0 +1,13 @@
+.dropdown-menu-mobile li a{
+    @include fontSize(15);
+  
+}
+
+.dropdown-menu-mobile li{
+    background-color: rgb(40,40,40);
+    padding-left: 10px;
+}
+
+  [data-dropdown-mobile] .dropdown-menu-mobile{
+    margin-top: 0;
+ }

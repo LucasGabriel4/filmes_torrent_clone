@@ -1,0 +1,197 @@
+.warning_message{
+    width: 100%;
+    min-height: 190px;
+    border: 1px solid $black-border;
+    @include boxShadow_2;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.warning_message h1{
+    color: $red;
+    margin: 13px 0 0 0;
+   &::after{
+    content: ']'
+   }
+   &::before{
+    content: '['
+   }
+   @include fontSize(15);
+}
+
+.warning_message p{
+    @include fontSize(13);
+    line-height: 18px;
+    padding:10px 5px 0 5px;
+}
+
+
+
+.warning_message p > span{
+    color: $red;
+    @include fontSize(15);
+}
+aside.aside__options{
+    padding: 10px;
+}
+
+
+// 
+
+
+.to_sign-blog{
+    width: 100%;
+    min-height: 190px;
+    border: 1px solid $black-border;
+    @include boxShadow_2;
+    margin-bottom: 10px;
+}
+
+.to_sign-title{
+    background-color: $black;
+    padding: 7px 0 7px 7px;
+}
+
+.to_sign-title h1{
+   color: $white;
+}
+
+.to_sign-blog p{
+    @include fontSize(13);
+    padding: 10px 8px 10px 8px;
+    line-height: 18px;
+}
+
+.inputs{
+    padding: 0 8px;
+}
+
+.inputs input[type=submit]{
+    margin-top: 10px;
+}
+
+
+//
+
+.awaited_series_and_films{
+    width: 100%;
+    min-height: 300px;
+    border: 1px solid $black-border;
+    @include boxShadow_2;
+    margin-bottom: 10px;
+}
+
+.awaited_title{
+    background-color: $black;
+    padding: 7px 0 7px 7px;
+}
+
+.awaited_title h1{
+   color: $white;
+}
+
+ul.list_awaited{
+    padding: 10px 10px;
+}
+
+ul.list_awaited li{
+  margin-bottom: 10px;
+}
+
+ul.list_awaited li a{
+    text-decoration: none;
+    color: $navy-blue;
+    @include fontSize(13);
+    &::after{
+        content: '';
+        display: block;
+        width: 100%;
+        max-width: 185px;
+        height: 1px;
+        background-color: #ccc;
+        margin-top: 8px;
+    }
+}
+
+//
+
+.animes{
+    width: 100%;
+    min-height: 300px;
+    border: 1px solid $black-border;
+    @include boxShadow_2;
+    margin-bottom: 10px;
+}
+
+//
+
+.series{
+    width: 100%;
+    min-height: 300px;
+    border: 1px solid $black-border;
+    @include boxShadow_2;
+    margin-bottom: 10px;
+}
+
+
+
+//
+
+
+
+
+
+@media screen and (max-width: 1100px){
+    .warning_message{
+        width: 100%;
+        min-height: 100px;
+     
+    
+    }
+
+    .to_sign-blog{
+        width: 100%;
+        min-height: 135px;
+
+    }
+    
+    .inputs input[type=text]{
+        width: 90%;
+    }
+
+    .inputs input[type=submit]{
+        margin-top: 10px;
+        display: block;
+    }
+
+    ul.list_awaited li a{
+        &::after{
+            content: '';
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            height: 1px;
+            background-color: #ccc;
+            margin-top: 8px;
+        }
+    }
+    
+    
+}
+
+
+
+@media screen and (max-width: 600px){
+    .warning_message{
+        padding-bottom: 20px;
+   
+    
+    }
+
+    .to_sign-blog{
+       padding-bottom: 20px;
+
+    }
+    
+}

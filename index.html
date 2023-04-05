@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet"/>
+    <title>Filmes via torrent</title>
+</head>
+<body>
+    <div class="container">
+       <header>
+            
+
+            <div class="header__banner"><img src="img/header__banner.png"></div>
+            <div class="header__menu-container">
+                <nav class="menu-desktop">
+                     <ul>
+                         <li><a href="">Home</a></li>
+                              <li data-dropdown>
+                                 <a href="" id="icon">Gênero</a>
+                                 <ul class="dropdown-menu">
+                                    <li><a href="">Acão</a></li>
+                                    <li><a href="">Animação</a></li>
+                                    <li><a href="">Aventura</a></li>
+                                    <li><a href="">Biografia</a></li>
+                                    <li><a href="">Classico</a></li>
+                                    <li><a href="">Comedia</a></li>
+                                    <li><a href="">Crime</a></li>
+                                    <li><a href="">Drama</a></li>
+                                 </ul>
+                              </li>
+
+                              <li data-dropdown>
+                                   <a href="" id="icon">Àudio</a>
+                                 <ul class="dropdown-menu">
+                                    <li><a href="">Dual audio</audio></a></li>
+                                    <li><a href="">Dublado</a></li>
+                                    <li><a href="">Legendado</a></li>
+                                    <li><a href="">Nacional</a></li>
+                                 </ul>
+                              </li>
+                        
+                         <li><a href="">Filmes</a></li>
+                         <li><a href="">Lançamentos</a></li>
+                     </ul>
+                </nav><!--menu-desktop-->
+
+                <div class="container_menu-hamburger">
+                   <button class="menu-hamburger" data-menu>
+                       <span class="line"></span>
+                       <span class="line"></span>
+                       <span class="line"></span>
+                   </button>
+                </div><!--container_menu-hamburger-->
+                <nav class="menu_mobile">
+                   <ul data-menu_mobile class="hide">
+                     <li><a href="">Home</a></li>
+                        <li><a href="" id="icon">Gênero</a></li>
+                        <li data-dropdown-mobile>
+                          <ul class="dropdown-menu-mobile">
+                              <li><a href="">Acão</a></li>
+                              <li><a href="">Animação</a></li>
+                              <li><a href="">Aventura</a></li>
+                              <li><a href="">Biografia</a></li>
+                              <li><a href="">Classico</a></li>
+                              <li><a href="">Comedia</a></li>
+                              <li><a href="">Crime</a></li>
+                              <li><a href="">Drama</a></li>
+                           </ul>
+                         </li>
+                  
+                     <li data-dropdown-mobile>
+                           <a href="" id="icon">Àudio</a>
+                        <ul class="dropdown-menu-mobile">
+                           <li><a href="">Acão</a></li>
+                           <li><a href="">Animação</a></li>
+                           <li><a href="">Aventura</a></li>
+                           <li><a href="">Biografia</a></li>
+                           <li><a href="">Classico</a></li>
+                           <li><a href="">Comedia</a></li>
+                           <li><a href="">Crime</a></li>
+                           <li><a href="">Drama</a></li>
+                        </ul>
+                        </li>
+                     <li><a href="">Filmes</a></li>
+                     <li><a href="">Lançamentos</a></li>
+                   </ul>
+                </nav>
+          
+
+
+            </div>
+
+          
+       </header>
+
+
+       <div class="grid__container">
+            <aside class="aside__options"> 
+               <section>
+                   <div class="warning_message">
+                      <h1>ATENÇÃO</h1>
+                      <p>Pedimos que favorite nosso Site, aperte CTRL+D ou clique na estrela do seu navegador. Pois o Google está retirando sites de torrent da pesquisa!
+                        <br><span>OBS:</span> Por enquanto é isso, bom download a todos!</p>
+                        
+                   </div><!--warning_message-->    
+                   
+                   <div class="to_sign-blog">
+                        <div class="to_sign-title"><h1>Assinar blog por e-mail</h1></div><!--to_sign-title-->
+                        <p>Digite seu endereço de e-mail para assinar este blog e receber notificações de novas publicações por e-mail.</p>
+                     <div class="inputs">
+                        <input type="text" placeholder="Endereço de e-mail"/>
+                        <input type="submit" name="sign_up" value="Assinar"/>
+                     </div><!--inputs-->
+                     
+                   </div><!--to_sign-blog-->
+
+
+                   <div class="awaited_series_and_films">
+                       <div class="awaited_title"><h1>+ Aguardados</h1></div><!--awaited_title-->
+                       <ul class="list_awaited">
+                          <li class="list_item"><a href="">One Piece Film: Red</a></li>
+                          <li class="list_item"><a href="">Avatar 2: O Caminho da Água</a></li>
+                          <li class="list_item"><a href="">M3GAN</a></li>
+                          <li class="list_item"><a href="">The Last of Us 1ª Temporada</a></li>
+                          <li class="list_item"><a href="">Homem-Formiga e a Vespa: Quantumania</a></li>
+                          <li class="list_item"><a href="">Creed III</a></li>
+                          <li class="list_item"><a href="">Attack on Titan Temporada Final Parte 3</a></li>
+                          <li class="list_item"><a href="">Pânico 6</a></li>
+                          <li class="list_item"><a href="">Shazam! Fúria dos Deuses</a></li>
+                          <li class="list_item"><a href="">Super Mario Bros.: O Filme</a></li>
+                          <li class="list_item"><a href="">Dungeons & Dragons: Honra Entre Rebeldes</a></li>
+                       </ul>
+                   </div><!--awaited_series_and_films-->
+
+
+                   <div class="animes">
+                    <div class="awaited_title"><h1>Animes</h1></div><!--awaited_title-->
+                    <ul class="list_awaited">
+                       <li class="list_item"><a href="">Attack on Titan</a></li>
+                       <li class="list_item"><a href="">Black Clover</a></li>
+                       <li class="list_item"><a href="">Bleach</a></li>
+                       <li class="list_item"><a href="">Boku no Hero Academia</a></li>
+                       <li class="list_item"><a href="">Boruto: Naruto Next Generations</a></li>
+                       <li class="list_item"><a href="">Death Note</a></li>
+                       <li class="list_item"><a href="">Demon Slayer</a></li>
+                       <li class="list_item"><a href="">Dr. Stone</a></li>
+                       <li class="list_item"><a href="">Dragon Ball Clássico</a></li>
+                       <li class="list_item"><a href="">Dragon Ball Kai</a></li>
+                       <li class="list_item"><a href="">Dragon Ball Z</a></li>
+                       <li class="list_item"><a href="">Dragon Quest: Dai no Daibouken</a></li>
+                       <li class="list_item"><a href="">Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka</a></li>
+                       <li class="list_item"><a href="">Fullmetal Alchemist</a></li>
+                       <li class="list_item"><a href="">Gintama</a></li>
+                       <li class="list_item"><a href="">Golden Kamuy</a></li>
+                       <li class="list_item"><a href="">Hanyou no Yashahime: Sengoku Otogizoushi</a></li>
+                       <li class="list_item"><a href="">Hunter x Hunter</a></li>
+                       <li class="list_item"><a href="">Jujutsu Kaisen</a></li>
+                       <li class="list_item"><a href="">Mushoku Tensei: Isekai Ittara Honki Dasu</a></li>
+                       <li class="list_item"><a href="">Nanatsu no Taizai</a></li>
+                       <li class="list_item"><a href="">Naruto Clássico</a></li>
+                       <li class="list_item"><a href="">Naruto Shippuden</a></li>
+                       <li class="list_item"><a href="">One Piece</a></li>
+                       <li class="list_item"><a href="">Os Cavaleiros do Zodíaco</a></li>
+                    </ul>
+                </div><!--animes-->
+
+
+
+                <div class="series">
+                    <div class="awaited_title"><h1>Séries</h1></div><!--awaited_title-->
+                    <ul class="list_awaited">
+                       <li class="list_item"><a href="">A Maldição da Mansão Bly</a></li>
+                       <li class="list_item"><a href="">A Maldição da Residência Hill</a></li>
+                       <li class="list_item"><a href="">Anne with an E</a></li>
+                       <li class="list_item"><a href="">Bates Motel</a></li>
+                       <li class="list_item"><a href="">Breaking Bad</a></li>
+                       <li class="list_item"><a href="">Chernobyl</a></li>
+                       <li class="list_item"><a href="">Cobra Kai</a></li>
+                       <li class="list_item"><a href="">Dark</a></li>
+                       <li class="list_item"><a href="">Demolidor</a></li>
+                       <li class="list_item"><a href="">Friends</a></li>
+                       <li class="list_item"><a href="">Game of Thrones</a></li>
+                       <li class="list_item"><a href="">Gotham</a></li>
+                       <li class="list_item"><a href="">His Dark Materials: Fronteiras do Universo</a></li>
+                       <li class="list_item"><a href="">House of Cards</a></li>
+                       <li class="list_item"><a href="">How I Met Your Mother</a></li>
+                       <li class="list_item"><a href="">Lost</a></li>
+                       <li class="list_item"><a href="">O Conto da Aia</a></li>
+                       <li class="list_item"><a href="">O Gambito da Rainha</a></li>
+                       <li class="list_item"><a href="">O Mandaloriano</a></li>
+                       <li class="list_item"><a href="">Peaky Blinders</a></li>
+                       <li class="list_item"><a href="">Pennyworth</a></li>
+                       <li class="list_item"><a href="">Prison Break</a></li>
+                       <li class="list_item"><a href="">Sherlock</a></li>
+                       <li class="list_item"><a href="">Sons of Anarchy</a></li>
+                       <li class="list_item"><a href="">Stranger Things</a></li>
+                       <li class="list_item"><a href="">Supernatural</a></li>
+                       <li class="list_item"><a href="">The 100</a></li>
+                       <li class="list_item"><a href="">The Boys</a></li>
+                       <li class="list_item"><a href="">The Flight Attendant</a></li>
+                       <li class="list_item"><a href="">The Office</a></li>
+                       <li class="list_item"><a href="">The Stand</a></li>
+                       <li class="list_item"><a href="">The Witcher</a></li>
+                       <li class="list_item"><a href="">Vikings</a></li>
+                       <li class="list_item"><a href="">WandaVision</a></li>
+                       <li class="list_item"><a href="">Westworld</a></li>
+                    </ul>
+                </div><!--series-->
+                   
+               </section>
+       
+            </aside>
+
+
+
+            <main class="catalog_series_and_films">
+               <section>
+                  <div class="search__container">
+                     <div class="search__inputs">
+                        <input type="search" placeholder="Pesquisar..."/>
+                        <button>Pesquisar</button>
+                     </div><!--search__inputs-->
+                      
+                  </div><!--search__container-->
+   
+                  <div class="category">
+                      <h1>Categoria: Gênero</h1>
+                  </div><!--category-->
+
+               </section>
+
+
+               <section>
+                   <div class="catalog__single-container">
+                     <div class="line__black"></div>
+                     <div class="content__catalog-container">
+                        <h1 class="title__catalog-item">Adão Negro Torrent – WEB-DL 720p | 1080p Dual Áudio / Dublado (2022)</h1>
+                        <span class="month">novembro 22, 2022</span>
+                        <span class="comments">13 Comments</span>
+
+                        <div class="flex">
+                           <div class="catalog__container-img">
+                                <img src="img/Adao__negro.jpg"/>
+                           </div><!--catalog__container-img-->
+
+                           <div class="catalog__content">
+                              <h2>»INFORMAÇÕES«</h2>
+                              <div class="list__information-catalog">
+                                  <ul>
+                                     <li><strong>Baixar:</strong> Adão Negro Torrent</li>
+                                     <li><strong>Lançamento: </strong>2022</li>
+                                     <li><strong>Gênero:</strong> Ação | Fantasia | Ficção-Científica</li>
+                                     <li><strong>Formato:</strong> MKV | MP4</li>
+                                     <li><strong>Qualidade:</strong> WEB-DL</li>
+                                     <li><strong>Idioma:</strong> Português | Inglês</li>
+                                     <li><strong>Legenda:</strong> Português</li>
+                                     <li><strong>Tamanho:</strong> 2.73 GB | 7.89 GB | 2.37 GB | 7.53 GB | 22.23 GB</li>
+                                     <li><strong>Duração:</strong> 2h 05 Min.</li>
+                                     <li><strong>Qualidade do Audio: 10</strong></li>
+                                     <li><strong>Qualidade de Video: 10</strong></li>
+                                  </ul>
+
+                                  <div class="note">
+                                    <img src="img/imdb.png">
+                                    <span>7.1</span>
+                                 
+                                 </div><!--note-->
+                              </div><!--list__information-catalog-->
+                           </div><!--catalog__content-->
+                        </div><!--flex-->
+                     </div><!--content__catalog-container-->
+
+                   
+                      
+                   </div><!--catalog__single-container-->
+
+
+                   <div class="catalog__single-container">
+                     <div class="line__black"></div>
+                     <div class="content__catalog-container">
+                        <h1 class="title__catalog-item">The Last of Us 1ª Temporada Torrent – WEB-DL 720p | 1080p | 2160p 4K Dual Áudio / Dublado (2023)</h1>
+                        <span class="month">fevereiro 5, 2023</span>
+                        <span class="comments">115 Comments</span>
+
+                        <div class="flex">
+                           <div class="catalog__container-img">
+                                <img src="img/The Last Of Us.jpg"/>
+                           </div><!--catalog__container-img-->
+
+                           <div class="catalog__content">
+                              <h2>»INFORMAÇÕES«</h2>
+                              <div class="list__information-catalog">
+                                  <ul>
+                                     <li><strong>Baixar:</strong> The Last of Us 1ª Temporada Torrent</li>
+                                     <li><strong>Lançamento: </strong>2022</li>
+                                     <li><strong>Gênero:</strong> Ação | Drama | Ficção | Suspense</li>
+                                     <li><strong>Formato:</strong> MKV | MP4</li>
+                                     <li><strong>Qualidade:</strong> WEB-DL</li>
+                                     <li><strong>Idioma:</strong> Português | Inglês</li>
+                                     <li><strong>Legenda:</strong> Português</li>
+                                     <li><strong>Tamanho:</strong> 2.73 GB | 7.89 GB | 2.37 GB | 7.53 GB | 22.23 GB</li>
+                                     <li><strong>Duração:</strong> 55 Min./EP</li>
+                                     <li><strong>Qualidade do Audio: 10</strong></li>
+                                     <li><strong>Qualidade de Video: 10</strong></li>
+                                  </ul>
+
+                                  <div class="note">
+                                    <img src="img/imdb.png">
+                                    <span>9.5</span>
+                                 
+                                 </div><!--note-->
+                              </div><!--list__information-catalog-->
+                           </div><!--catalog__content-->
+                        </div><!--flex-->
+                     </div><!--content__catalog-container-->
+
+                   
+                      
+                   </div><!--catalog__single-container-->
+
+
+                   <div class="catalog__single-container">
+                     <div class="line__black"></div>
+                     <div class="content__catalog-container">
+                        <h1 class="title__catalog-item">Pantera Negra: Wakanda para Sempre Torrent – BluRay 720p | 1080p Dual Áudio / Dublado (2022)</h1>
+                        <span class="month">fevereiro 1, 2023</span>
+                        <span class="comments">16 Comments</span>
+
+                        <div class="flex">
+                           <div class="catalog__container-img">
+                                <img src="img/Pantera__negra.jpg"/>
+                           </div><!--catalog__container-img-->
+
+                           <div class="catalog__content">
+                              <h2>»INFORMAÇÕES«</h2>
+                              <div class="list__information-catalog">
+                                  <ul>
+                                     <li><strong>Baixar:</strong>  Pantera Negra 2: Wakanda para Sempre Torrent</li>
+                                     <li><strong>Lançamento: </strong>2022</li>
+                                     <li><strong>Gênero:</strong> Ação |  Aventura | Drama</li>
+                                     <li><strong>Formato:</strong> MKV | MP4</li>
+                                     <li><strong>Qualidade:</strong> BluRay</li>
+                                     <li><strong>Idioma:</strong> Português | Inglês</li>
+                                     <li><strong>Legenda:</strong> Português</li>
+                                     <li><strong>Tamanho:</strong> 3.38 GB | 6.10 GB | 3.07 GB | 22.56 GB | 11.93 GB</li>
+                                     <li><strong>Duração:</strong> 2h 41 Min.</li>
+                                     <li><strong>Qualidade do Audio: 10</strong></li>
+                                     <li><strong>Qualidade de Video: 10</strong></li>
+                                  </ul>
+
+                                  <div class="note">
+                                    <img src="img/imdb.png">
+                                    <span>7.3</span>
+                                 
+                                 </div><!--note-->
+                              </div><!--list__information-catalog-->
+                           </div><!--catalog__content-->
+                        </div><!--flex-->
+                     </div><!--content__catalog-container-->
+
+                   
+                      
+                   </div><!--catalog__single-container-->
+
+                   <div class="catalog__single-container">
+                     <div class="line__black"></div>
+                     <div class="content__catalog-container">
+                        <h1 class="title__catalog-item">M3GAN Torrent – BluRay 720p | 1080p Dual Áudio / Dublado (2023)</h1>
+                        <span class="month">janeiro 25, 2023</span>
+                        <span class="comments">13 Comments</span>
+
+                        <div class="flex">
+                           <div class="catalog__container-img">
+                                <img src="img/megan.jpg"/>
+                           </div><!--catalog__container-img-->
+
+                           <div class="catalog__content">
+                              <h2>»INFORMAÇÕES«</h2>
+                              <div class="list__information-catalog">
+                                  <ul>
+                                     <li><strong>Baixar:</strong>M3GAN Torrent</li>
+                                     <li><strong>Lançamento: </strong>2022</li>
+                                     <li><strong>Gênero:</strong> Terror | Ficção-Científica | Suspense</li>
+                                     <li><strong>Formato:</strong> MKV | MP4</li>
+                                     <li><strong>Qualidade:</strong> WEB-DL</li>
+                                     <li><strong>Idioma:</strong> Português | Inglês</li>
+                                     <li><strong>Legenda:</strong> Português</li>
+                                     <li><strong>Tamanho:</strong> 1.91 GB | 1.58 GB | 1.94 GB | 5.73 GB | 17.84 GB</li>
+                                     <li><strong>Duração:</strong> 1h 42 Min.</li>
+                                     <li><strong>Qualidade do Audio: 10</strong></li>
+                                     <li><strong>Qualidade de Video: 10</strong></li>
+                                  </ul>
+
+                                  <div class="note">
+                                    <img src="img/imdb.png">
+                                    <span>6.1</span>
+                                 
+                                 </div><!--note-->
+                              </div><!--list__information-catalog-->
+                           </div><!--catalog__content-->
+                        </div><!--flex-->
+                     </div><!--content__catalog-container-->
+
+                   
+                      
+                   </div><!--catalog__single-container-->
+
+
+                   <div class="catalog__single-container">
+                     <div class="line__black"></div>
+                     <div class="content__catalog-container">
+                        <h1 class="title__catalog-item">Avatar: O Caminho da Água Torrent – BluRay 720p | 1080p Dual Áudio / Dublado (2022)</h1>
+                        <span class="month">janeiro 10, 2023</span>
+                        <span class="comments">1 Comment</span>
+
+                        <div class="flex">
+                           <div class="catalog__container-img">
+                                <img src="img/Avatar.jpg"/>
+                           </div><!--catalog__container-img-->
+
+                           <div class="catalog__content">
+                              <h2>»INFORMAÇÕES«</h2>
+                              <div class="list__information-catalog">
+                                  <ul>
+                                     <li><strong>Baixar:</strong> Avatar 2: O Caminho da Água Torrent</li>
+                                     <li><strong>Lançamento: </strong>2022</li>
+                                     <li><strong>Gênero:</strong> Ação | Aventura | Fantasia</li>
+                                     <li><strong>Formato:</strong> MKV | MP4</li>
+                                     <li><strong>Qualidade:</strong>  CAMRip</li>
+                                     <li><strong>Idioma:</strong> Português | Inglês</li>
+                                     <li><strong>Legenda:</strong> Português</li>
+                                     <li><strong>Tamanho:</strong>3.52 GB | 3.57 GB</li>
+                                     <li><strong>Duração:</strong>3h 10 Min.</li>
+                                     <li><strong>Qualidade do Audio: 10</strong></li>
+                                     <li><strong>Qualidade de Video: 10</strong></li>
+                                  </ul>
+
+                                  <div class="note">
+                                    <img src="img/imdb.png">
+                                    <span>8.2</span>
+                                 
+                                 </div><!--note-->
+                              </div><!--list__information-catalog-->
+                           </div><!--catalog__content-->
+                        </div><!--flex-->
+                     </div><!--content__catalog-container-->
+
+                   
+                      
+                   </div><!--catalog__single-container-->
+
+                   <div class="catalog__single-container">
+                     <div class="line__black"></div>
+                     <div class="content__catalog-container">
+                        <h1 class="title__catalog-item">Dragon Ball Super: Super Hero Torrent – BluRay 1080p Legendado (2022)</h1>
+                        <span class="month">dezembro 12, 2022</span>
+                        <span class="comments">11 Comments</span>
+
+                        <div class="flex">
+                           <div class="catalog__container-img">
+                                <img src="img/Dragon__ball.jpg"/>
+                           </div><!--catalog__container-img-->
+
+                           <div class="catalog__content">
+                              <h2>»INFORMAÇÕES«</h2>
+                              <div class="list__information-catalog">
+                                  <ul>
+                                     <li><strong>Baixar:</strong>Dragon Ball Super: Super Hero Torrent</li>
+                                     <li><strong>Lançamento: </strong>2022</li>
+                                     <li><strong>Gênero:</strong>Animação | Ação | Aventura</li>
+                                     <li><strong>Formato:</strong> MKV | MP4</li>
+                                     <li><strong>Qualidade:</strong> BluRay</li>
+                                     <li><strong>Idioma:</strong> Português | Inglês</li>
+                                     <li><strong>Legenda:</strong> Português</li>
+                                     <li><strong>Tamanho:</strong> 1.21 GB | 10.58 GB</li>
+                                     <li><strong>Duração:</strong>1h 38 Min.</li>
+                                     <li><strong>Qualidade do Audio: 10</strong></li>
+                                     <li><strong>Qualidade de Video: 10</strong></li>
+                                  </ul>
+
+                                  <div class="note">
+                                    <img src="img/imdb.png">
+                                    <span>7.2</span>
+                                 
+                                 </div><!--note-->
+                              </div><!--list__information-catalog-->
+                           </div><!--catalog__content-->
+                        </div><!--flex-->
+                     </div><!--content__catalog-container-->
+
+                   
+                      
+                   </div><!--catalog__single-container-->
+
+                   <div class="catalog__single-container">
+                     <div class="line__black"></div>
+                     <div class="content__catalog-container">
+                        <h1 class="title__catalog-item">Jung_E Torrent – WEB-DL 1080p Dual Áudio (2023)</h1>
+                        <span class="month">janeiro 20, 2023</span>
+                        <span class="comments">13 Comments</span>
+
+                        <div class="flex">
+                           <div class="catalog__container-img">
+                                <img src="img/jungle.jpg"/>
+                           </div><!--catalog__container-img-->
+
+                           <div class="catalog__content">
+                              <h2>»INFORMAÇÕES«</h2>
+                              <div class="list__information-catalog">
+                                  <ul>
+                                     <li><strong>Baixar:</strong>Jung_E Torrent</li>
+                                     <li><strong>Lançamento: </strong>2022</li>
+                                     <li><strong>Gênero:</strong>Ação | Aventura | Drama | Ficção</li>
+                                     <li><strong>Formato:</strong> MKV | MP4</li>
+                                     <li><strong>Qualidade:</strong> WEB-DL</li>
+                                     <li><strong>Idioma:</strong>Português | Coreano</li>
+                                     <li><strong>Legenda:</strong> Português</li>
+                                     <li><strong>Tamanho:</strong>3.43 GB</li>
+                                     <li><strong>Duração:</strong>1h 38 Min.</li>
+                                     <li><strong>Qualidade do Audio: 10</strong></li>
+                                     <li><strong>Qualidade de Video: 10</strong></li>
+                                  </ul>
+
+                                  <div class="note">
+                                    <img src="img/imdb.png">
+                                    <span>6.9</span>
+                                 
+                                 </div><!--note-->
+                              </div><!--list__information-catalog-->
+                           </div><!--catalog__content-->
+                        </div><!--flex-->
+                     </div><!--content__catalog-container-->
+
+                   
+                      
+                   </div><!--catalog__single-container-->
+
+                   <div class="catalog__single-container">
+                     <div class="line__black"></div>
+                     <div class="content__catalog-container">
+                        <h1 class="title__catalog-item">Teen Wolf: O Filme Torrent – WEB-DL 1080p Dual Áudio (2023)</h1>
+                        <span class="month">janeiro 27, 2023</span>
+                        <span class="comments">13 Comments</span>
+
+                        <div class="flex">
+                           <div class="catalog__container-img">
+                                <img src="img/Teen__wolf.jpg"/>
+                           </div><!--catalog__container-img-->
+
+                           <div class="catalog__content">
+                              <h2>»INFORMAÇÕES«</h2>
+                              <div class="list__information-catalog">
+                                  <ul>
+                                     <li><strong>Baixar:</strong>Teen Wolf: O Filme Torrent</li>
+                                     <li><strong>Lançamento: </strong>2022</li>
+                                     <li><strong>Gênero:</strong>Ação | Drama | Fantasia</li>
+                                     <li><strong>Formato:</strong> MKV | MP4</li>
+                                     <li><strong>Qualidade:</strong> WEB-DL</li>
+                                     <li><strong>Idioma:</strong> Português | Inglês</li>
+                                     <li><strong>Legenda:</strong> Português</li>
+                                     <li><strong>Tamanho:</strong>2.96 GB</li>
+                                     <li><strong>Duração:</strong>2h 20 Min.</li>
+                                     <li><strong>Qualidade do Audio: 10</strong></li>
+                                     <li><strong>Qualidade de Video: 10</strong></li>
+                                  </ul>
+
+                                  <div class="note">
+                                    <img src="img/imdb.png">
+                                    <span>6.4</span>
+                                 
+                                 </div><!--note-->
+                              </div><!--list__information-catalog-->
+                           </div><!--catalog__content-->
+                        </div><!--flex-->
+                     </div><!--content__catalog-container-->
+
+                   
+                      
+                   </div><!--catalog__single-container-->
+
+                   <div class="catalog__single-container">
+                     <div class="line__black"></div>
+                     <div class="content__catalog-container">
+                        <h1 class="title__catalog-item">Gato de Botas 2: O Último Pedido Torrent – WEB-DL 720p | 1080p Dublado / Legendado (2022)</h1>
+                        <span class="month">janeiro 8, 2023</span>
+                        <span class="comments">13 Comments</span>
+
+                        <div class="flex">
+                           <div class="catalog__container-img">
+                                <img src="img/Gato_de_botas.jpg"/>
+                           </div><!--catalog__container-img-->
+
+                           <div class="catalog__content">
+                              <h2>»INFORMAÇÕES«</h2>
+                              <div class="list__information-catalog">
+                                  <ul>
+                                     <li><strong>Baixar:</strong>Gato de Botas 2: O Último Pedido Torrent</li>
+                                     <li><strong>Lançamento: </strong>2022</li>
+                                     <li><strong>Gênero:</strong>Animação | Comédia</li>
+                                     <li><strong>Formato:</strong> MKV | MP4</li>
+                                     <li><strong>Qualidade:</strong> WEB-DL</li>
+                                     <li><strong>Idioma:</strong> Português | Inglês</li>
+                                     <li><strong>Legenda:</strong> Português</li>
+                                     <li><strong>Tamanho:</strong>1.92 GB | 1.95 GB | 5.81 GB</li>
+                                     <li><strong>Duração:</strong>1h 40 Min.</li>
+                                     <li><strong>Qualidade do Audio: 10</strong></li>
+                                     <li><strong>Qualidade de Video: 10</strong></li>
+                                  </ul>
+
+                                  <div class="note">
+                                    <img src="img/imdb.png">
+                                    <span>7.6</span>
+                                 
+                                 </div><!--note-->
+                              </div><!--list__information-catalog-->
+                           </div><!--catalog__content-->
+                        </div><!--flex-->
+                     </div><!--content__catalog-container-->
+
+                   
+                      
+                   </div><!--catalog__single-container-->
+
+                   <div class="catalog__single-container">
+                     <div class="line__black"></div>
+                     <div class="content__catalog-container">
+                        <h1 class="title__catalog-item">Tudo em Todo o Lado ao Mesmo Tempo Torrent – CAMRip 720p Dublado / Legendado (2022)</h1>
+                        <span class="month">abril 14, 2022</span>
+                        <span class="comments">13 Comments</span>
+
+                        <div class="flex">
+                           <div class="catalog__container-img">
+                                <img src="img/Tudo em Todo Lugar ao Mesmo Tempo.jpg"/>
+                           </div><!--catalog__container-img-->
+
+                           <div class="catalog__content">
+                              <h2>»INFORMAÇÕES«</h2>
+                              <div class="list__information-catalog">
+                                  <ul>
+                                     <li><strong>Baixar:</strong>Tudo em Todo o Lado ao Mesmo Tempo Torrent</li>
+                                     <li><strong>Lançamento: </strong>2022</li>
+                                     <li><strong>Gênero:</strong> Ação | Aventura | Comédia</li>
+                                     <li><strong>Formato:</strong> MKV | MP4</li>
+                                     <li><strong>Qualidade:</strong>CAMRip</li>
+                                     <li><strong>Idioma:</strong> Português | Inglês</li>
+                                     <li><strong>Legenda:</strong> Português</li>
+                                     <li><strong>Tamanho:</strong>2.52 GB</li>
+                                     <li><strong>Duração:</strong> 2h 19 Min.</li>
+                                     <li><strong>Qualidade do Audio:8.5</strong></li>
+                                     <li><strong>Qualidade de Video:8.5</strong></li>
+                                  </ul>
+
+                                  <div class="note">
+                                    <img src="img/imdb.png">
+                                    <span>8.9</span>
+                                 
+                                 </div><!--note-->
+                              </div><!--list__information-catalog-->
+                           </div><!--catalog__content-->
+                        </div><!--flex-->
+                     </div><!--content__catalog-container-->
+
+                   
+                      
+                   </div><!--catalog__single-container-->
+
+
+                   <div class="pagination">
+                      <span>Pagina 1 de 38</span>
+                      <span><a href="">1</a></span>
+                      <span><a href="">2</a></span>
+                      <span><a href="">3</a></span>
+                      <span><a href="">4</a></span>
+                      <span><a href="">5</a></span>
+                      <span><a href="">...</a></span>
+                      <span><a href="">10</a></span>
+                      <span><a href="">20</a></span>
+                      <span><a href="">30</a></span>
+                      <span><a href="">...</a></span>
+                      <span><a href="">»</a></span>
+                      <span><a href="">Último »</a></span>
+                   </div><!--pagination-->
+
+               
+               </section>
+              
+              
+            </main>
+
+
+
+            <aside class="aside__popular-posts">
+               <div class="popular__posts-container">
+                     <div class="popular__posts-title"><h1>Popular posts:</h1></div>
+                     <div class="popular__posts-img">
+                        <img src="img/The Last Of Us.jpg"/>
+                     </div>
+
+                     <div class="popular__posts-img">
+                        <img src="img/Pantera__negra.jpg"/>
+                     </div>
+
+                     <div class="popular__posts-img">
+                        <img src="img/Avatar.jpg"/>
+                     </div>
+
+                     <div class="popular__posts-img">
+                        <img src="img/Gato_de_botas.jpg"/>
+                     </div>
+
+                     <div class="popular__posts-img">
+                        <img src="img/Dragon__ball.jpg"/>
+                     </div>
+
+                     <div class="popular__posts-img">
+                        <img src="img/Teen__wolf.jpg"/>
+                     </div>
+
+                     <div class="popular__posts-img">
+                        <img src="img/jungle.jpg"/>
+                     </div>
+
+                     <div class="popular__posts-img">
+                        <img src="img/megan.jpg"/>
+                     </div>
+
+                     <div class="popular__posts-img">
+                        <img src="img/Tudo em Todo Lugar ao Mesmo Tempo.jpg"/>
+                     </div>
+
+                     <div class="popular__posts-img">
+                        <img src="img/Adao__negro.jpg"/>
+                     </div>
+               </div><!--popular__posts-container-->
+            </aside>
+
+
+       </div><!--grid__container-->
+
+
+       
+         <footer>
+            <p>Filme Via Torrents - Baixe Filmes e Series Torrent HD Lançamento © 2020</p>
+         </footer>
+    </div>
+
+
+
+    <script>
+
+       const menuHamburger = document.querySelector('[data-menu]')
+       const menuMobile = document.querySelector('[data-menu_mobile]')
+
+       menuHamburger.addEventListener('click', activeMenu)
+
+       function activeMenu(){
+          menuHamburger.classList.toggle('active');
+          menuMobile.classList.toggle('hide')
+
+       }
+    </script>
+
+
+</body>
+</html>

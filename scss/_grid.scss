@@ -1,0 +1,46 @@
+.grid__container{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas: 'aside_catalogo main aside_popular'
+                               'footer  footer  footer';
+   
+}
+
+aside.aside__catalogo{
+  grid-area: aside_catalogo ;
+  min-height: 100vh;
+}
+
+main{
+  grid-area: main;
+  min-height: 100vh;
+}
+
+aside.aside__popular-posts{
+   grid-area: aside_popular;
+   min-height: 100vh;
+}
+
+footer{
+  grid-area: footer;
+  background-color: $gray-border;
+  padding: 10px 10px;
+  color: $white;
+  @include fontSize(13);
+}
+
+
+
+@media screen and (max-width: 1100px){
+  .grid__container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:  'main'
+                          'aside_catalogo'
+                          'aside_popular'
+                          ;
+  }
+
+ 
+ 
+}

@@ -1,0 +1,20 @@
+body{
+    background-color: $gray;
+    height: 100%;
+    font-family: $fonte;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+
+.container{
+    max-width: 1135px;
+    margin: 0 auto;
+    @include boxShadow;
+    width: 100%;
+    background-color: $white;
+}
+
